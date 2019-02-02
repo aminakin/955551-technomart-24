@@ -14,7 +14,7 @@
      <input class="search-field" type="search" placeholder="Поиск:">
      <nav>
       <a class="main-logo" href="index.html">
-        <img src="img/main-logo.svg" width="109" heihgt="17" alt="ТЕХНОМАРТ">
+        <img src="img/main-logo.svg" width="109" heihgt="17" alt="Логотип компании Техномарт">
       </a>
       <ul class="user-navigation">
         <li><a href="#">Мои заказы</a></li>
@@ -30,8 +30,8 @@
        <li><a href="Contacts.html">Контакты</a></li>
      </ul>
       <ul class="shopping-cart-menu">
-        <li class="favorites">Закладки</li>
-        <li class="shopping-cart">Корзина</li>
+        <li class="favorites"><a href="favorites.html">Закладки</a></li>
+        <li class="shopping-cart"><a href="shopping-cart.html">Корзина</a></li>
         <li class="button-purchase"><a href="purchase.html">Оформить заказ</a></li>
       </ul>
      </nav>
@@ -45,17 +45,46 @@
       </ul>
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form>
-          <p>Производители:</p>
-          <p><input type="checkbox" name="manufacturer" value="bosch" checked>BOCSH</p>
-          <p><input type="checkbox" name="manufacturer" value="interskol">ИНТЕРСКОЛ</p>
-          <p><input type="checkbox" name="manufacturer" value="makita" checked>MAKITA</p>
-          <p><input type="checkbox" name="manufacturer" value="dewalt">DEWALT</p>
-          <p><input type="checkbox" name="manufacturer" value="hitachi">HITACHI</p>
-          <p>Питание:</p>
-          <p><input type="radio" name="power" value="accum" checked>АККУМУЛЯТОРНЫЕ</p>
-          <p><input type="radio" name="power" value="acdc">СЕТЕВЫЕ</p>
-          <button class="button-filter" value="show-filter">ПОКАЗАТЬ</button>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+          <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+          <li class="filter-option">
+            <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="bosch" id="filter-bosch" checked>
+             <label for="filter-bosch">BOCSH</label>
+           </li>
+           <li class="filter-option">
+             <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="interskol" id="filter-interskol">
+              <label for="filter-interskol">ИНТЕРСКОЛ</label>
+            </li>
+            <li class="filter-option">
+              <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="makita" id="filter-makita" checked>
+               <label for="filter-makita">MAKITA</label>
+             </li>
+             <li class="filter-option">
+               <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="dewalt" id="filter-dewalt">
+                <label for="filter-dewalt">DEWALT</label>
+              </li>
+              <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="hitachi" id="filter-hitachi">
+                 <label for="filter-hitachi">HITACHI</label>
+               </li>
+             </ul>
+          </fieldset>
+          <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li class="filter-option">
+                <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="accum" id="filter-accum" checked>
+                <label for="filter-accum">АККУМУЛЯТОРНЫЕ</label>
+              </li>
+              <li class="filter-option">
+                  <input class="visually-hidden filter-input filter-input-radio" type="radio" name="power" value="acdc" id="filter-acdc">
+                  <label for="filter-acdc">СЕТЕВЫЕ</label>
+                </li>
+            </ul>
+          <button type="submit" class="button button-filter" value="show-filter">ПОКАЗАТЬ</button>
+        </fieldset>
         </form>
       </section>
       <section class="catalog">
@@ -64,7 +93,7 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 3000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-1.png" alt="Перфоратов BOSH BFG 3000">
+            <img src="img/product-1.png" width="218" height="170" alt="Перфоратов BOSH BFG 3000">
              </p>
              <p class="catalog-item-old-price">22500 Р.</p>
              <p class="catalog-item-price">15500 Р.</p>
@@ -72,7 +101,7 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 6000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-2.png" alt="Перфоратов BOSH BFG 6000">
+            <img src="img/product-2.png" width="218" height="170" alt="Перфоратов BOSH BFG 6000">
              </p>
              <p class="catalog-item-old-price">30500 Р.</p>
              <p class="catalog-item-price">25500 Р.</p>
@@ -80,8 +109,8 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 2000</h3>
             <p class="catalog-item-interact">
-             <button class="button-buy" value="buy">КУПИТЬ</button>
-             <button class="button-favorive" value="favorite">В ЗАКЛАДКИ</button>
+             <button type="button" class="button-buy" value="buy">КУПИТЬ</button>
+             <button type="button" class="button-favorite" value="favorite">В ЗАКЛАДКИ</button>
             </p>
              <!--<p class="catalog-item-old-price">30500 Р.</p>-->
              <p class="catalog-item-price">12500 Р.</p>
@@ -89,7 +118,7 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 3000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-1.png" alt="Перфоратов BOSH BFG 3000">
+            <img src="img/product-1.png" width="218" height="170" alt="Перфоратов BOSH BFG 3000">
              </p>
              <p class="catalog-item-old-price">22500 Р.</p>
              <p class="catalog-item-price">15500 Р.</p>
@@ -97,7 +126,7 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 6000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-2.png" alt="Перфоратов BOSH BFG 6000">
+            <img src="img/product-2.png" width="218" height="170" alt="Перфоратов BOSH BFG 6000">
              </p>
              <p class="catalog-item-old-price">30500 Р.</p>
              <p class="catalog-item-price">25500 Р.</p>
@@ -105,7 +134,7 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 2000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-3.png" alt="Перфоратов BOSH BFG 2000">
+            <img src="img/product-3.png" width="218" height="170" alt="Перфоратов BOSH BFG 2000">
              </p>
              <!--<p class="catalog-item-old-price">30500 Р.</p>-->
              <p class="catalog-item-price">12500 Р.</p>
@@ -113,7 +142,7 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 3000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-1.png" alt="Перфоратов BOSH BFG 3000">
+            <img src="img/product-1.png" width="218" height="170" alt="Перфоратов BOSH BFG 3000">
              </p>
              <p class="catalog-item-old-price">22500 Р.</p>
              <p class="catalog-item-price">15500 Р.</p>
@@ -121,7 +150,7 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 6000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-2.png" alt="Перфоратов BOSH BFG 6000">
+            <img src="img/product-2.png" width="218" height="170" alt="Перфоратов BOSH BFG 6000">
              </p>
              <p class="catalog-item-old-price">30500 Р.</p>
              <p class="catalog-item-price">25500 Р.</p>
@@ -129,18 +158,24 @@
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 2000</h3>
             <p class="catalog-item-image">
-            <img src="img/product-3.png" alt="Перфоратов BOSH BFG 2000">
+            <img src="img/product-3.png" width="218" height="170" alt="Перфоратов BOSH BFG 2000">
              </p>
              <!--<p class="catalog-item-old-price">30500 Р.</p>-->
              <p class="catalog-item-price">12500 Р.</p>
           </li>
         </ul>
       </section>
+      <section class="modal modal-sold">
+        <p class="item-added">Товар добавлен в корзину!</p>
+        <a class="modal-purchase" href="purchase.html">Оформить заказ</a>
+        <button class="modal-go-on" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
     </main>
     <footer class="main-footer">
       <nav class="footer-navigation">
-       <a class="footer-logo" href="#">
-         <img src"img/footer-logo.svg" width="137" heihgt="22" alt="ТЕХНОМАРТ">
+       <a class="footer-logo" href="index.html">
+         <img src="img/footer-logo.svg" width="137" heihgt="22" alt="Логотип компании Техномарт">
        </a>
        <ul class="footer-site-navigation">
          <li><a href="conpany.html">Компания</a></li>

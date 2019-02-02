@@ -14,14 +14,14 @@
     <input class="search-field" type="search" placeholder="Поиск:">
     <nav>
      <a class="main-logo" href="#">
-       <img src="img/main-logo.svg" width="109" heihgt="17" alt="ТЕХНОМАРТ">
+       <img src="img/main-logo.svg" width="109" heihgt="17" alt="Логотип компании Техномарт">
      </a>
      <ul class="login-navigation">
-       <li class="login">Вход</li>
-       <li class="registration">Регистрация</li>
+       <li class="login"><a href="login.html">Вход</a></li>
+       <li class="registration"><a href="registration.html">Регистрация</a></li>
      </ul>
      <ul class="site-navigation">
-      <li><a>Главная</a></li>
+      <li><a href="#">Главная</a></li>
       <li><a href="company.html">Компания</a></li>
       <li><a href="catalog.html">Каталог</a></li>
       <li><a href="news.html">Новости</a></li>
@@ -132,14 +132,40 @@
      <section class="contacts">
        <h2>Контакты</h2>
        <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
-       <div class="map-little"><img src="img/map-little.png" width="300" height="158" alt="Карта"></div>
+       <a href="#" class="map-little"><img src="img/map-little.png" width="300" height="158" alt="Карта"></a>
        <a class="button" href="#">Заблудились? Напишите нам!</a>
      </section>
+     <section class="modal modal-write-us">
+       <h2 class="visually-hidden">Напишите нам</h2>
+       <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+         <p>
+           <label for="write-us-name">Ваше имя:</label>
+           <input class="write-us-name" type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
+         </p>
+         <p>
+           <label for="write-us-email">Ваш e-mail:</label>
+           <input class="write-us-email" type="email" id="write-us-email" name="email" placeholder="email@exapmle.com">
+          </p>
+         <p>
+           <label for="write-us-text">Текст письма:</label>
+           <textarea class="write-us-text" id="write-us-text" rows="5" name="text" placeholder="В свободной форме"></textarea>
+           </p>
+         <button class="write-us-button" type="submit">ОТПРАВИТЬ</button>
+       </form>
+       <button class="modal-close" type="button">Закрыть</button>
+     </section>
+     <section class="modal modal-map">
+       <h2 class="visually-hidden">Как до нас добраться</h2>
+        <p>
+          <img src="img/map.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
+        </p>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
   </main>
   <footer class="main-footer">
     <nav class="footer-navigation">
      <a class="footer-logo" href="#">
-       <img src="img/footer-logo.svg" width="137" heihgt="22" alt="ТЕХНОМАРТ">
+       <img src="img/footer-logo.svg" width="137" heihgt="22" alt="Логотип компании Техномарт">
      </a>
      <ul class="footer-site-navigation">
        <li><a href="conpany.html">Компания</a></li>
