@@ -3,23 +3,37 @@
   <head>
     <meta charset="utf-8">
     <title>Техномарт - Каталог</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
-      <h1>Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <p class="site-name">Интернет-магазин строительных материалов и инструментов для ремонта</p>
       <p class="header-contacts">
-        +7 (812) 555-05-55<br>
-        г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
-      </p>
-     <input class="search-field" type="search" placeholder="Поиск:">
-     <nav>
-      <a class="main-logo" href="index.html">
-        <img src="img/main-logo.svg" width="109" heihgt="17" alt="Логотип компании Техномарт">
-      </a>
+        <p class="header-tel">+7 (812) 555-05-55</p>
+        <p class="header-address">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+        <a class="current-user" href="#">Равшан Джамшутович</a>
       <ul class="user-navigation">
         <li><a href="#">Мои заказы</a></li>
         <li><a href="#">Личный кабинет</a></li>
       </ul>
+      <div class="header-top">
+      <a class="main-logo" href="#">
+        <img src="img/main-logo.svg" width="109" heihgt="17" alt="Логотип компании Техномарт">
+      </a>
+      <p class="search">
+        <label for="search"></label>
+       <input id="search" type="search" placeholder="Поиск:">
+      </p>
+     <ul class="shopping-cart-navigation">
+       <li class="favorites"><a href="favorites.html">Закладки</a></li>
+       <li class="shopping-cart"><a href="shopping-cart.html">Корзина</a></li>
+       <li class="button-purchase"><a href="purchase.html">Оформить заказ</a></li>
+     </ul>
+    </div>
+    <nav>
       <ul class="site-navigation">
        <li><a href="index.html">Главная</a></li>
        <li><a href="company.html">Компания</a></li>
@@ -29,12 +43,7 @@
        <li><a href="delivery.html">Доставка</a></li>
        <li><a href="Contacts.html">Контакты</a></li>
      </ul>
-      <ul class="shopping-cart-menu">
-        <li class="favorites"><a href="favorites.html">Закладки</a></li>
-        <li class="shopping-cart"><a href="shopping-cart.html">Корзина</a></li>
-        <li class="button-purchase"><a href="purchase.html">Оформить заказ</a></li>
-      </ul>
-     </nav>
+   </nav>
    </header>
    <main class="container">
      <h1 class="page-title">Перфораторы</h1>
@@ -83,7 +92,7 @@
                   <label for="filter-acdc">СЕТЕВЫЕ</label>
                 </li>
             </ul>
-          <button type="submit" class="button button-filter" value="show-filter">ПОКАЗАТЬ</button>
+          <button type="submit" class="button-filter" value="show-filter">ПОКАЗАТЬ</button>
         </fieldset>
         </form>
       </section>
@@ -108,10 +117,10 @@
           </li>
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратов BOSH BFG 2000</h3>
-            <p class="catalog-item-interact">
+            <div class="catalog-item-interact">
              <button type="button" class="button-buy" value="buy">КУПИТЬ</button>
              <button type="button" class="button-favorite" value="favorite">В ЗАКЛАДКИ</button>
-            </p>
+           </div>
              <!--<p class="catalog-item-old-price">30500 Р.</p>-->
              <p class="catalog-item-price">12500 Р.</p>
           </li>
@@ -165,19 +174,14 @@
           </li>
         </ul>
       </section>
-      <section class="modal modal-sold">
-        <p class="item-added">Товар добавлен в корзину!</p>
-        <a class="modal-purchase" href="purchase.html">Оформить заказ</a>
-        <button class="modal-go-on" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
-        <button class="modal-close" type="button">Закрыть</button>
-      </section>
-    </main>
+      </main>
     <footer class="main-footer">
+      <div class="footer-top">
+        <a class="footer-logo" href="#">
+          <img src="img/footer-logo.svg" width="137" heihgt="22" alt="Логотип компании Техномарт">
+         </a>
       <nav class="footer-navigation">
-       <a class="footer-logo" href="index.html">
-         <img src="img/footer-logo.svg" width="137" heihgt="22" alt="Логотип компании Техномарт">
-       </a>
-       <ul class="footer-site-navigation">
+        <ul class="footer-site-navigation">
          <li><a href="conpany.html">Компания</a></li>
          <li><a href="news.html">Новости</a></li>
          <li><a href="catalog.html">Каталог</a></li>
@@ -194,6 +198,8 @@
       <p class="footer-contacts">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
         +7 (812) 555-05-55
       </p>
+    </div>
+    <div class="footer-bottom">
       <p class="footer-copyright">
         © 2010-2017 Компания "Техномарт"<br>
         Все права защищены
@@ -213,6 +219,13 @@
         Разработано -
         <a href="www.htmlacademy.ru">htmlacademy.ru</a>
       </p>
+    </div>
     </footer>
+    <section class="modal modal-sold">
+      <p class="item-added">Товар добавлен в корзину!</p>
+      <a class="button modal-purchase" href="purchase.html">Оформить заказ</a>
+      <button class="button modal-go-on" type="button">ПРОДОЛЖИТЬ ПОКУПКИ</button>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
   </body>
 </html>
