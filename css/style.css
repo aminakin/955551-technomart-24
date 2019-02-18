@@ -1,11 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Cuprum", Arial, sans-serif;
-
   background-color: #ffffff;
-
 }
 
 a {
@@ -14,10 +11,80 @@ a {
 
 .main-header {
   background-color: #f4f7f9;
+  margin-bottom: 120px;
 }
 
-.header-top{
-background-color: #32425c;
+.header-top {
+  width: 100%;
+  background-color: #32425c;
+  margin-bottom: 46px;
+}
+
+.login-navigation,
+.site-navigation,
+.shopping-cart-navigation,
+.user-navigation {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.container-center {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.header-top .container-center {
+  display: flex;
+}
+
+.main-header .container-center {
+  display: flex;
+  margin-bottom: 40px;
+}
+
+.container-center h1 {
+  margin: 0;
+  padding: 0;
+  width: 200px;
+}
+
+.header-contacts p {
+  margin: 0;
+  padding: 0;
+}
+
+.login-navigation {
+  width: 300px;
+  display: flex;
+  margin-left: auto;
+}
+
+.login {
+  width: 120px;
+  margin-right: 20px;
+}
+
+.registration {
+  width: 150px;
+}
+
+.shopping-cart-navigation {
+  margin-left: auto;
+  display: flex;
+}
+
+.favorites,
+.shopping-cart,
+.button-purchase {
+  width: 150px;
+}
+
+.search {
+  margin: 0;
+  margin-left: 10px;
+  padding: 0;
 }
 
 .search input {
@@ -44,12 +111,13 @@ background-color: #32425c;
 .search input:focus {
   color: #000000;
   background-color: #ffffff;
-  outline:none;
+  outline: none;
   border-color: transparent;
 }
 
 .main-logo {
-  background-image: url(../img/header-logo.png);
+  width: 220px;
+  background: url(../img/header-logo.png) no-repeat;
 }
 
 .main-header h1,
@@ -59,13 +127,6 @@ background-color: #32425c;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-}
-
-.login-navigation,
-.site-navigation,
-.shopping-cart-navigation,
-.user-navigation {
-  list-style: none;
 }
 
 .login-navigation a {
@@ -114,7 +175,7 @@ background-color: #32425c;
   background-color: #32425c;
 }
 
-.button-purchase a{
+.button-purchase a {
   background-color: #63a63e;
 }
 
@@ -208,7 +269,6 @@ background-color: #32425c;
   line-height: 24px;
   color: #f3f7f9;
   background-color: #32425c;
-
 }
 
 .footer-logo {
@@ -431,7 +491,7 @@ background-color: #32425c;
   line-height: 20px;
 }
 
-.filter-input:disabled + label {
+.filter-input:disabled+label {
   color: #000000;
   opacity: 0.4;
 }
