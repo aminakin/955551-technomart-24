@@ -11,7 +11,8 @@ a {
 
 .main-header {
   background-color: #f4f7f9;
-  margin-bottom: 120px;
+  margin-bottom: 60px;
+  border-bottom: 1px solid transparent;
 }
 
 .header-top {
@@ -29,10 +30,12 @@ a {
   list-style: none;
 }
 
-.container-center {
+.container-center,
+.center {
   width: 940px;
   margin: 0 auto;
   padding: 0 10px;
+  background-color: #456654;
 }
 
 .header-top .container-center {
@@ -42,10 +45,12 @@ a {
 .main-header .container-center {
   display: flex;
   margin-bottom: 40px;
+  justify-content: space-between;
 }
 
 .container-center h1 {
   margin: 0;
+  margin-left: 50px;
   padding: 0;
   width: 200px;
 }
@@ -58,12 +63,12 @@ a {
 .login-navigation {
   width: 300px;
   display: flex;
-  margin-left: auto;
+  justify-content: flex-end;
 }
 
 .login {
   width: 120px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .registration {
@@ -73,6 +78,12 @@ a {
 .shopping-cart-navigation {
   margin-left: auto;
   display: flex;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 59px;
 }
 
 .favorites,
@@ -157,7 +168,7 @@ a {
 }
 
 .site-navigation {
-  background-color: #32425c;
+  background: url(../img/main_nav.png) no-repeat;
 }
 
 .site-navigation a {
@@ -512,4 +523,17 @@ a {
 .modal-go-on {
   color: #000000;
   background-color: #ffffff;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-us {
+  width: 540px;
+}
+
+.contacts {
+  width: 300px;
 }
