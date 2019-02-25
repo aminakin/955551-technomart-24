@@ -22,8 +22,8 @@
           <input id="search" type="search" placeholder="Поиск:">
         </p>
         <ul class="shopping-cart-navigation">
-          <li class="favorites"><a href="favorites.html">Закладки</a></li>
-          <li class="shopping-cart"><a href="shopping-cart.html">Корзина</a></li>
+          <li class="favorites"><a href="favorites.html">Закладки: 0</a></li>
+          <li class="shopping-cart"><a href="shopping-cart.html">Корзина: 0</a></li>
           <li class="button-purchase"><a href="purchase.html">Оформить заказ</a></li>
         </ul>
       </div>
@@ -132,8 +132,8 @@
      </section>-->
     <div class="index-columns">
       <section class="about-us">
-        <h2>Компания "Техномарт"</h2>
-        <p>Настоящий мужской шоппинг начинается здесь! Огромны выбор товаров для ремонта и
+        <h2>Компания «‎Техномарт»‎</h2>
+        <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
           строительства не оставит равнодушными любителей сэкономить на гастарбайтерах</p>
         <p>Мы можем доставить ваш товар в самые отдалённые точки России!<br>
           Техномарт работает со многими транспортными компаниями:</p>
@@ -148,7 +148,6 @@
         <h2>Контакты</h2>
         <p>Вы можете забрать товар сами,<br>заехав в наш офис:</p>
         <a href="#" class="map-little"><img src="img/map-little.png" width="300" height="158" alt="Карта"></a>
-        <br>
         <a class="button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </div>
@@ -181,14 +180,14 @@
     <div class="footer-bottom">
       <div class="center">
         <p class="footer-copyright">
-          © 2010-2017 Компания "Техномарт"<br>
+          © 2010-2019 Компания «‎Техномарт»<br>
           Все права защищены
         </p>
         <div class="footer-social">
           <ul>
-            <li><a class="social-button-vk" href="#">Вконтакте</a></li>
-            <li><a class="social-button-fb" href="#">Фейсбук</a></li>
-            <li><a class="social-button-insta" href="#">Инстаграм</a></li>
+            <li><a class="social-button-vk" href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+            <li><a class="social-button-fb" href="#"><span class="visually-hidden">Фейсбук</span></a></li>
+            <li><a class="social-button-insta" href="#"><span class="visually-hidden">Инстаграм</span></a></li>
           </ul>
         </div>
         <p class="footer-feedback">
@@ -205,28 +204,28 @@
   <section class="modal modal-write-us">
     <h2 class="visually-hidden">Напишите нам</h2>
     <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
-      <p>
+      <p class="write-us-item">
         <label for="write-us-name">Ваше имя:</label>
         <input class="write-us-name" type="text" id="write-us-name" name="name" placeholder="Имя Фамилия">
       </p>
-      <p>
+      <p class="write-us-item">
         <label for="write-us-email">Ваш e-mail:</label>
         <input class="write-us-email" type="email" id="write-us-email" name="email" placeholder="email@exapmle.com">
       </p>
-      <p>
+      <p class="write-us-item">
         <label for="write-us-text">Текст письма:</label>
         <textarea class="write-us-text" id="write-us-text" rows="5" name="text" placeholder="В свободной форме"></textarea>
       </p>
       <button class="button write-us-button" type="submit">ОТПРАВИТЬ</button>
     </form>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close write-us-close" type="button">Закрыть</button>
   </section>
   <section class="modal modal-map">
     <h2 class="visually-hidden">Как до нас добраться</h2>
     <p>
       <img src="img/map.png" width="970" height="476" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург">
     </p>
-    <button class="modal-close" type="button">Закрыть</button>
+    <button class="modal-close map-close" type="button">Закрыть</button>
   </section>
 </body>
 
