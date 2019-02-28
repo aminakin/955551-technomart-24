@@ -14,12 +14,12 @@
   <header class="main-header">
     <div class="header-top">
       <div class="container-center">
-        <a class="main-logo" href="#">
+        <a class="main-logo" href="index.html">
           <img src="img/main-logo.svg" width="109" alt="Логотип компании Техномарт">
         </a>
         <p class="search">
-          <label for="search"></label>
           <input id="search" type="search" placeholder="Поиск:">
+          <label for="search"></label>
         </p>
         <ul class="shopping-cart-navigation">
           <li class="favorites"><a href="favorites.html">Закладки: 0</a></li>
@@ -65,7 +65,12 @@
     <div class="catalog-columns">
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+        <span>Фильтр:</span>
+        <form class="filter" method="get" action="https://echo.htmlacademy.ru" oninput="price-output.value=price.value">
+          <fieldset>
+            <legend>Цена:</legend>
+            <input type="range" id="price" name="price" min="0" max="30000" step="500">
+          </fieldset>
           <fieldset>
             <legend>Производители:</legend>
             <ul>
@@ -109,6 +114,18 @@
       </section>
       <section class="catalog">
         <h2 class="visually-hidden">Список перфораторов</h2>
+        <div class="sorting">
+          <span>Сортировка:</span>
+          <ul class="sorting-list">
+            <li class="sorting-item"><a class="sorting-current">По цене</a></li>
+            <li class="sorting-item"><a href="#">По типу</a></li>
+            <li class="sorting-item"><a href="#">По функционалу</a></li>
+          </ul>
+          <div class="order-buttons">
+            <a class="order-up order-on"></a>
+            <a class="order-down" href="#"></a>
+          </div>
+        </div>
         <ul class="catalog-list">
           <li class="catalog-item">
             <h3 class="catalog-item-title">Перфоратор BOSCH BFG 3000</h3>
@@ -222,13 +239,32 @@
             </div>
           </li>
         </ul>
+        <ul class="pagination-list">
+          <li class="pagination-item pagination-item-current"><a>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item pagination-item-next"><a href="#">Следующая</a></li>
+        </ul>
       </section>
     </div>
+    <section class="catalog-items-description">
+      <div class="background">
+        <div class="container">
+          <h3>Пара слов о перфораторах</h3>
+          <p>Перфоратор — универсальный строительный инструмент. Предназначен для
+            сверления и долбления отверстий в кирпиче, бетоне и камне.<br> Существуют
+            электромеханические и пневматические перфораторы. Современные модели
+            могут выполнять функции дрели, шуруповерта и отбойного молотка.
+            В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве
+            будут совмещены отбойный молоток и ударная дрель.</p>
+        </div>
+      </div>
+    </section>
   </main>
   <footer class="main-footer">
     <div class="footer-top">
       <div class="center">
-        <a class="footer-logo" href="#">
+        <a class="footer-logo" href="index.html">
           <img src="img/footer-logo.svg" width="137" alt="Логотип компании Техномарт">
         </a>
         <ul class="footer-site-navigation">
@@ -252,7 +288,7 @@
     <div class="footer-bottom">
       <div class="center">
         <p class="footer-copyright">
-          © 2010-2017 Компания "Техномарт"<br>
+          © 2010-2019 Компания "Техномарт"<br>
           Все права защищены
         </p>
         <div class="footer-social">
