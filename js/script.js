@@ -53,8 +53,3 @@ mapClose.addEventListener('click', function(evt) {
   evt.preventDefault();
   map.classList.remove('modal-show');
 });
-
-buy.addEventListener('click', function(evt) {
-  evt.preventDefault();
-  sold.classList.add('modal-show');
-});
