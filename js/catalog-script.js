@@ -1,6 +1,8 @@
 var sold = document.querySelector('.modal-sold');
 var buy = document.querySelectorAll('.button-buy');
 var favorite = document.querySelectorAll('button-favorite');
+var soldClose = sold.querySelector('.sold-close');
+var goOn = sold.querySelector('.modal-go-on');
 
 for (var i = 0; i < buy.length; i ++) {
   buy[i].addEventListener('click', function(evt) {
@@ -16,4 +18,14 @@ window.addEventListener('keydown', function(evt) {
       sold.classList.remove('modal-show');
     }
   }
+});
+
+soldClose.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  sold.classList.remove('modal-show');
+});
+
+goOn.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  sold.classList.remove('modal-show');
 });
