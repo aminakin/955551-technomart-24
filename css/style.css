@@ -691,14 +691,18 @@ input[type="radio"].visually-hidden {
 }
 
 .manufacturer-item a {
+  display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-align: center;
   align-items: center;
   margin-bottom: 20px;
   width: 218px;
-  min-height: 145px;
+  height: 145px;
   box-shadow: 0 0 0 1px #e5e5e5;
   text-align: center;
+
   transition: box-shadow 0.3s;
 }
 
@@ -711,13 +715,13 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
-.manufacturer-item a:active img {
+.manufacturer-item a:active {
   opacity: 0.3;
 }
 
 .services {
   position: relative;
-  background-color: #98f6a3;
+
   width: 100%;
 }
 
@@ -734,8 +738,8 @@ input[type="radio"].visually-hidden {
 
 .background {
   position: relative;
-  width: 100vw;
-  left: calc(-50vw + 50%);
+  width: 99vw;
+  left: calc(-50vw + 51%);
   background: #f4f8f9;
   padding-bottom: 99px;
   margin-bottom: 55px;
@@ -755,7 +759,7 @@ input[type="radio"].visually-hidden {
   margin-bottom: 71px;
 }
 
-.index-page .background p {
+.service-promo {
   width: 400px;
 }
 
@@ -819,14 +823,14 @@ input[type="radio"].visually-hidden {
 }
 
 .services-slider .item-guarantee {
-  width: 380px;
+  width: 375px;
 }
 
 .services-slider .item-guarantee:after {
   content: "";
   position: absolute;
   top: 3px;
-  right: -247px;
+  right: -252px;
   width: 389px;
   height: 283px;
   background: url(../img/guarantee.png) no-repeat;
@@ -1450,7 +1454,9 @@ input[type="radio"].visually-hidden {
   box-shadow: inset 0 -3px 0 0 #367315;
 }
 
-.button-favorite {
+ .actions .button-favorite {
+  box-sizing: border-box;
+  padding: 7px 0px;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase;
@@ -1458,9 +1464,8 @@ input[type="radio"].visually-hidden {
   font-weight: 400;
   color: #32425c;
   background-color: #ffffff;
-  border: 0px solid transparent;
+  border: 3px solid #63a63e;
   border-radius: 3px;
-  box-shadow: inset 0 0 0 3px #63a63e;
 }
 
 .button-buy:hover,
@@ -1476,7 +1481,7 @@ input[type="radio"].visually-hidden {
 
 .button-favorite:hover,
 .button-favorite:focus {
-  box-shadow: inset 0 0 0 3px #32425c;
+  border: 3px solid #32425c;
   outline: none;
 }
 
@@ -1503,7 +1508,7 @@ input[type="radio"].visually-hidden {
   border-radius: 3px;
 }
 
-.pagination-list .pagination-item-current a {
+.pagination-item-current a {
   background-color: #ee3643;
   border-color: #ee3643;
   color: white;
@@ -1518,7 +1523,7 @@ input[type="radio"].visually-hidden {
   border-color: #ee3643;
 }
 
-.pagination-list .pagination-item-next a {
+.pagination-item-next a {
   padding-left: 31px;
   padding-right: 30px;
 }
